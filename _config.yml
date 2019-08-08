@@ -8,7 +8,7 @@ subtitle:
 description: y=y(x,t) x∈(lg1997,lg?)
 keywords: music,ocean,starsky,data,code
 author: fisheep
-language: zh-Hans
+language: en
 timezone:
 
 # URL
@@ -73,11 +73,17 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: skapp
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github
+  type: git
   repo: https://github.com/fisheep16/fisheep16.github.io.git
   branch: master
+backup:
+    type: git
+    repository:
+       github: git@github.com:fisheep16/fisheep16.github.io.git,hexo
+       gitcafe: git@git.coding.net:fisheep16/fisheep16.git,hexo
+
